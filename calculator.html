@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script type="text/javascript">
+            function qube() {
+                var num = document.getElementById("n1");
+                num.value = Math.pow(num.value, 3);
+            }
+            function empty() {
+                var num = document.getElementById("n1");
+                num.value = null;
+            }
+        </script>
+    </head>
+    <body>
+        Number:
+        <input type="text" id="n1", onclick="empty()">
+        <button onclick="qube()">z <sup>3</sup></button>
+    </body>
+</html>
